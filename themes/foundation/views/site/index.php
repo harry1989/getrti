@@ -5,14 +5,16 @@
   
 
     <!-- Main Blog Content -->
-    
-
-      
-<style>
-p{
-text-align:justify;
-}
-</style>
+<div class="row">
+  <div class="small-12 large-12 ">
+     <h1><small>Together for an Open Government</small></h1>
+   </div>
+  <div class="small-12 large-12 ">      
+	  <style>
+		p{
+			text-align:justify;
+		}
+	</style>
 
 <article>
 <p>
@@ -35,3 +37,5 @@ At the end of it all, we aim to create an active space for citizen engagement us
 This site has been conceived, built and operated entirely in public interest by volunteers who are non-partisan and are passionate and committed to the idea of Open Government. Together, we can and we shall achieve a government that is answerable to its citizens.
 </p>
 </article>
+</div>
+</div>    

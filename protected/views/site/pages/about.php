@@ -27,7 +27,9 @@ margin: 16px;
 
     <!-- Main Blog Content -->
     
+<div class="row">
 
+	<div class="large-12" role="content">
 
       <article>
 
@@ -96,3 +98,6 @@ margin: 16px;
         </div>
 
       </article>
+
+      </div>
+</div>
