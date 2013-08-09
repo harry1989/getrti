@@ -2,9 +2,9 @@
 
 				<div class="row"> <!-- Search Bar-->
 					<div class="large-12 columns panel" >					  
-						<div class="row collapse center" style="padding-left: 14%;margin-bottom: -2%;">
+						<div class="row collapse center" >
 
-							<div class="small-2 columns">
+							<div class="small-4 columns">
 							  <p style="line-height: 2.3;">
 							     Search for your MP:
 							  </p>
@@ -18,7 +18,7 @@
 							  <a href="#" class="button success prefix">Search</a>
 							</div>
 						
-					  </div>
+					  	</div>
 					</div>
 				</div>
 
