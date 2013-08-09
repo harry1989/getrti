@@ -1,0 +1,70 @@
+ul.newnav
+	{
+		margin-left: 6%;
+		list-style: none;
+		font-size: 1em;
+		line-height: 1.6;
+		font-family: inherit;
+		
+	}
+	li.newnav{
+		float:left;
+		margin-right:4%;
+	}
+	input.custom.checkbox {
+	
+		display: inline-block;
+		width: 16px;
+		height: 16px;
+		position: relative;
+		top: -1px;
+		vertical-align: middle;
+		border: solid 1px #cccccc;
+		background: white;
+		margin: 6px 6px 4px 0px ;
+	}
+  
+	ul.tasklist
+	{
+		margin-left: 6%;
+		list-style: none;
+		font-size: 1em;
+		line-height: 1.6;
+		font-family: inherit;
+	}
+
+	ul.tasklist > li{
+		float:left;
+		margin-right:4%;
+	}
+
+	ul.tasklist > li.disabled {
+		
+	}
+
+	aside.sidenavcol
+	{
+		margin-left: 10px;
+		padding: 0px 0px 0px 0px;
+		background: url(<?php echo Yii::app()->theme->baseUrl; ?>/img/todo.png) repeat-y 29px 0;
+	}
+	
+	ul.side-nav
+	{
+		margin-left:5px;
+	
+	}
+	
+	p.test
+	{
+		
+	}
+	
+	a.logo
+	{
+	color:black;
+	}
+	
+	.left {
+	    float:left;
+	    }

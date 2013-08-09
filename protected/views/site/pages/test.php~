@@ -1,0 +1,29 @@
+<div class="ui-front">
+<label for="searchbox">Search for your MP</label>
+<input id="searchbox">
+<button>Click here</button>
+</div>
+<div id="viewQuery">
+     This is to view the query variable:
+</div>
+
+<script>
+
+   	source: function( request, response ) 
+		{
+			$.ajax({
+				url: "http://localhost/code/getrti/index.php?r=mps/mpData",
+				dataType: "jsonp",
+				data: {
+				      maxRows: 12,
+				      query: request.term
+				     }
+				}).done(
+					function(data){
+						$("#viewQuery").append(data);
+					})
+		},
+	minLength: 2
+});
+
+</script>

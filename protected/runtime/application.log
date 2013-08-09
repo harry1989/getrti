@@ -1,0 +1,858 @@
+2013/07/30 11:55:25 [warning] [application] Failed to set unsafe attribute "image" of "ContactForm".
+in /home/handsmed/public_html/getrti/protected/controllers/SiteController.php (57)
+in /home/handsmed/public_html/getrti/index.php (13)
+2013/07/30 11:57:56 [warning] [application] Failed to set unsafe attribute "image" of "ContactForm".
+in /home/handsmed/public_html/getrti/protected/controllers/SiteController.php (57)
+in /home/handsmed/public_html/getrti/index.php (13)
+2013/07/31 11:34:45 [error] [exception.CException] exception 'CException' with message 'Property "ContactForm.body" is not defined.' in /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/helpers/CHtml.php(2255): CComponent->__get('body')
+#1 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/helpers/CHtml.php(1417): CHtml::resolveValue(Object(ContactForm), 'body')
+#2 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/widgets/CActiveForm.php(702): CHtml::activeTextArea(Object(ContactForm), 'body', Array)
+#3 /home/handsmed/public_html/getrti/themes/classic/views/site/contact.php(60): CActiveForm->textArea(Object(ContactForm), 'body', Array)
+#4 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(126): require('/home/handsmed/...')
+#5 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/handsmed/...', Array, true)
+#6 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CController.php(869): CBaseController->renderFile('/home/handsmed/...', Array, true)
+#7 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CController.php(782): CController->renderPartial('contact', Array, true)
+#8 /home/handsmed/public_html/getrti/protected/controllers/SiteController.php(73): CController->render('contact', Array)
+#9 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): SiteController->actionContact()
+#10 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('contact')
+#14 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('site/contact')
+#15 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /home/handsmed/public_html/getrti/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/getrti/index.php?r=site/contact
+HTTP_REFERER=http://handsmediaproductions.com/getrti/
+---
+2013/07/31 11:35:40 [error] [exception.CException] exception 'CException' with message 'Property "ContactForm.body" is not defined.' in /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/helpers/CHtml.php(2255): CComponent->__get('body')
+#1 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/helpers/CHtml.php(1417): CHtml::resolveValue(Object(ContactForm), 'body')
+#2 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/widgets/CActiveForm.php(702): CHtml::activeTextArea(Object(ContactForm), 'body', Array)
+#3 /home/handsmed/public_html/getrti/themes/classic/views/site/contact.php(60): CActiveForm->textArea(Object(ContactForm), 'body', Array)
+#4 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(126): require('/home/handsmed/...')
+#5 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/handsmed/...', Array, true)
+#6 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CController.php(869): CBaseController->renderFile('/home/handsmed/...', Array, true)
+#7 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CController.php(782): CController->renderPartial('contact', Array, true)
+#8 /home/handsmed/public_html/getrti/protected/controllers/SiteController.php(73): CController->render('contact', Array)
+#9 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): SiteController->actionContact()
+#10 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('contact')
+#14 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('site/contact')
+#15 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /home/handsmed/public_html/getrti/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/getrti/index.php?r=site/contact
+HTTP_REFERER=http://handsmediaproductions.com/getrti/index.php
+---
+2013/07/31 11:36:12 [error] [exception.CException] exception 'CException' with message 'Property "ContactForm.body" is not defined.' in /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/helpers/CHtml.php(2255): CComponent->__get('body')
+#1 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/helpers/CHtml.php(1417): CHtml::resolveValue(Object(ContactForm), 'body')
+#2 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/widgets/CActiveForm.php(702): CHtml::activeTextArea(Object(ContactForm), 'body', Array)
+#3 /home/handsmed/public_html/getrti/themes/classic/views/site/contact.php(60): CActiveForm->textArea(Object(ContactForm), 'body', Array)
+#4 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(126): require('/home/handsmed/...')
+#5 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/handsmed/...', Array, true)
+#6 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CController.php(869): CBaseController->renderFile('/home/handsmed/...', Array, true)
+#7 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CController.php(782): CController->renderPartial('contact', Array, true)
+#8 /home/handsmed/public_html/getrti/protected/controllers/SiteController.php(73): CController->render('contact', Array)
+#9 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): SiteController->actionContact()
+#10 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('contact')
+#14 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('site/contact')
+#15 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /home/handsmed/public_html/getrti/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/getrti/index.php?r=site/contact
+HTTP_REFERER=http://handsmediaproductions.com/getrti/index.php
+---
+2013/07/31 11:37:34 [error] [exception.CException] exception 'CException' with message 'Property "ContactForm.body" is not defined.' in /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/helpers/CHtml.php(2255): CComponent->__get('body')
+#1 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/helpers/CHtml.php(1417): CHtml::resolveValue(Object(ContactForm), 'body')
+#2 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/widgets/CActiveForm.php(702): CHtml::activeTextArea(Object(ContactForm), 'body', Array)
+#3 /home/handsmed/public_html/getrti/themes/classic/views/site/contact.php(60): CActiveForm->textArea(Object(ContactForm), 'body', Array)
+#4 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(126): require('/home/handsmed/...')
+#5 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/handsmed/...', Array, true)
+#6 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CController.php(869): CBaseController->renderFile('/home/handsmed/...', Array, true)
+#7 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CController.php(782): CController->renderPartial('contact', Array, true)
+#8 /home/handsmed/public_html/getrti/protected/controllers/SiteController.php(72): CController->render('contact', Array)
+#9 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): SiteController->actionContact()
+#10 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('contact')
+#14 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('site/contact')
+#15 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /home/handsmed/public_html/getrti/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/getrti/index.php?r=site/contact
+HTTP_REFERER=http://handsmediaproductions.com/getrti/index.php
+---
+2013/07/31 12:54:26 [error] [exception.CException] exception 'CException' with message 'Property "CMenu.linkOptions" is not defined.' in /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/base/CComponent.php:173
+Stack trace:
+#0 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CWidgetFactory.php(161): CComponent->__set('linkOptions', Array)
+#1 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'zii.widgets.CMe...', Array)
+#2 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(172): CBaseController->createWidget('zii.widgets.CMe...', Array)
+#3 /home/handsmed/public_html/getrti/themes/foundation/views/layouts/main.php(35): CBaseController->widget('zii.widgets.CMe...', Array)
+#4 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(126): require('/home/handsmed/...')
+#5 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/handsmed/...', Array, true)
+#6 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home/handsmed/...', Array, true)
+#7 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(206): COutputProcessor->run()
+#10 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 /home/handsmed/public_html/getrti/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#12 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(126): require('/home/handsmed/...')
+#13 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/handsmed/...', Array, true)
+#14 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CController.php(784): CBaseController->renderFile('/home/handsmed/...', Array, true)
+#15 /home/handsmed/public_html/getrti/protected/controllers/SiteController.php(32): CController->render('index')
+#16 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#17 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#19 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('')
+#21 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#22 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#23 /home/handsmed/public_html/getrti/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/getrti/index.php
+HTTP_REFERER=http://handsmediaproductions.com/getrti/index.php?r=site/contact
+---
+2013/08/04 03:11:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "campaigns/rtia".' in /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('campaigns/rtia')
+#1 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/handsmed/public_html/getrti/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=campaigns/rtia
+HTTP_REFERER=http://getrti.org/index.php?r=site/index
+---
+2013/08/04 03:12:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "http://getrti.org/campaigns/rtia".' in /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('http://getrti.o...')
+#1 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/handsmed/public_html/getrti/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=http://getrti.org/campaigns/rtia
+HTTP_REFERER=http://getrti.org/index.php?r=site/index
+---
+2013/08/04 03:15:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "http://getrti.org/campaigns/rtia".' in /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('http://getrti.o...')
+#1 /home/handsmed/public_html/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/handsmed/public_html/getrti/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=http://getrti.org/campaigns/rtia
+HTTP_REFERER=http://getrti.org/index.php?r=site/index
+---
+2013/08/05 15:49:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "rtia".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('rtia')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('rtia')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/rtia')
+#3 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/code/getrti/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/code/getrti/index.php?r=site/rtia
+HTTP_REFERER=http://localhost/code/getrti/index.php
+---
+2013/08/05 15:49:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "rtia".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('rtia')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('rtia')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/rtia')
+#3 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/code/getrti/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/code/getrti/index.php?r=site/rtia
+HTTP_REFERER=http://localhost/code/getrti/index.php
+---
+2013/08/05 19:38:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "rtia".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('rtia')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('rtia')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/rtia')
+#3 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/code/getrti/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/code/getrti/index.php?r=site/rtia
+HTTP_REFERER=http://localhost/code/getrti/index.php?r=site/index
+---
+2013/08/05 20:36:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "rtia".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('rtia')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('rtia')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/rtia')
+#3 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/code/getrti/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/code/getrti/index.php?r=site/rtia
+HTTP_REFERER=http://localhost/code/getrti/index.php?r=site/index
+---
+2013/08/07 18:41:23 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/yii/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('ListOfMps')
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('mps/ListOfMps')
+#9 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/code/getrti/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/code/getrti/index.php?r=mps/ListOfMps
+HTTP_REFERER=http://localhost/code/getrti/index.php?r=site/login
+---
+2013/08/07 18:52:12 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/yii/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('ListOfMps')
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('mps/ListOfMps')
+#9 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/code/getrti/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/code/getrti/index.php?r=mps/ListOfMps
+HTTP_REFERER=http://localhost/code/getrti/index.php?r=site/login
+---
+2013/08/07 18:53:00 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/yii/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('listofmps')
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('mps/listofmps')
+#9 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/code/getrti/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/code/getrti/index.php?r=mps/listofmps
+---
+2013/08/07 18:54:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/code/getrti/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/code/getrti/index.php?r=admin
+---
+2013/08/07 18:54:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/code/getrti/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/code/getrti/index.php?r=admin
+---
+2013/08/07 18:55:19 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/yii/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('ListOfMps')
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('mps/ListOfMps')
+#9 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/code/getrti/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/code/getrti/index.php?r=mps/ListOfMps
+HTTP_REFERER=http://localhost/code/getrti/index.php?r=site/login
+---
+2013/08/07 18:58:09 [error] [exception.CException] exception 'CException' with message 'MpsController cannot find the requested view "Hello".' in /var/www/yii/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('Hello', NULL, true)
+#1 /var/www/code/getrti/protected/controllers/MpsController.php(168): CController->render('Hello')
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(49): MpsController->actionListOfMps()
+#3 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('ListOfMps')
+#12 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('mps/ListOfMps')
+#13 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /var/www/code/getrti/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/code/getrti/index.php?r=mps/ListOfMps
+HTTP_REFERER=http://localhost/code/getrti/index.php?r=site/login
+---
+2013/08/07 19:25:42 [error] [php] Undefined variable: model (/var/www/code/getrti/protected/controllers/MpsController.php:168)
+Stack trace:
+#0 /var/www/yii/framework/web/filters/CFilterChain.php(133): MpsController->runAction()
+#1 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): MpsController->filterAccessControl()
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): MpsController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): MpsController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/code/getrti/index.php(13): CWebApplication->run()
+REQUEST_URI=/code/getrti/index.php?r=mps/ListOfMps
+in /var/www/code/getrti/protected/controllers/MpsController.php (168)
+in /var/www/code/getrti/index.php (13)
+2013/08/07 21:50:37 [error] [php] Undefined variable: model (/var/www/code/getrti/protected/controllers/MpsController.php:168)
+Stack trace:
+#0 /var/www/yii/framework/web/filters/CFilterChain.php(133): MpsController->runAction()
+#1 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): MpsController->filterAccessControl()
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): MpsController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): MpsController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/code/getrti/index.php(13): CWebApplication->run()
+REQUEST_URI=/code/getrti/index.php?r=mps/ListOfMps
+in /var/www/code/getrti/protected/controllers/MpsController.php (168)
+in /var/www/code/getrti/index.php (13)
+2013/08/07 21:55:07 [error] [php] include(Chtml.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:421)
+Stack trace:
+#0 /var/www/code/getrti/protected/controllers/MpsController.php(169): spl_autoload_call()
+#1 /var/www/yii/framework/web/actions/CInlineAction.php(49): MpsController->actionListOfMps()
+#2 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/yii/framework/web/filters/CFilterChain.php(133): MpsController->runAction()
+#4 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#6 /var/www/yii/framework/web/filters/CInlineFilter.php(58): MpsController->filterAccessControl()
+#7 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#8 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /var/www/yii/framework/web/CController.php(265): MpsController->runActionWithFilters()
+#10 /var/www/yii/framework/web/CWebApplication.php(282): MpsController->run()
+#11 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /var/www/code/getrti/index.php(13): CWebApplication->run()
+REQUEST_URI=/code/getrti/index.php?r=mps/ListOfMps
+in /var/www/code/getrti/protected/controllers/MpsController.php (169)
+in /var/www/code/getrti/index.php (13)
+2013/08/07 22:44:23 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/yii/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('ListOfMps')
+#9 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('mps/ListOfMps')
+#10 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /var/www/code/getrti/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/code/getrti/index.php?r=mps/ListOfMps
+---
+2013/08/07 23:08:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ListOfMps".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('ListOfMps')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('ListOfMps')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('mps/ListOfMps')
+#3 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/code/getrti/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/code/getrti/index.php?r=mps/ListOfMps
+---
+2013/08/07 23:40:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ListOfMps".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('ListOfMps')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('ListOfMps')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('mps/ListOfMps')
+#3 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/code/getrti/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/code/getrti/index.php?r=mps/ListOfMps
+---
+2013/08/07 23:43:22 [error] [php] Undefined index: Mps (/var/www/code/getrti/protected/controllers/MpsController.php:168)
+Stack trace:
+#0 /var/www/yii/framework/web/filters/CFilterChain.php(133): MpsController->runAction()
+#1 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): MpsController->filterAccessControl()
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): MpsController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): MpsController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/code/getrti/index.php(13): CWebApplication->run()
+REQUEST_URI=/code/getrti/index.php?r=mps/mpData
+in /var/www/code/getrti/protected/controllers/MpsController.php (168)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 12:27:00 [error] [exception.CException] exception 'CException' with message 'Property "Mps.query" is not defined.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('query')
+#1 /var/www/code/getrti/protected/models/Mps.php(120): CActiveRecord->__get('query')
+#2 /var/www/code/getrti/protected/controllers/MpsController.php(171): Mps->queryMatch('der')
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): MpsController->actionMpData()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('mpData')
+#13 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('mps/mpData')
+#14 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /var/www/code/getrti/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/code/getrti/index.php?r=mps/mpData&query=der
+---
+2013/08/08 12:51:24 [error] [exception.CException] exception 'CException' with message 'Mps and its behaviors do not have a method or closure named "queryMatch".' in /var/www/yii/framework/base/CComponent.php:265
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(225): CComponent->__call('queryMatch', Array)
+#1 /var/www/code/getrti/protected/controllers/MpsController.php(171): CActiveRecord->__call('queryMatch', Array)
+#2 /var/www/code/getrti/protected/controllers/MpsController.php(171): Mps->queryMatch('der')
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): MpsController->actionMpData()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('mpData')
+#13 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('mps/mpData')
+#14 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /var/www/code/getrti/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/code/getrti/index.php?r=mps/mpData&query=der
+---
+2013/08/08 12:51:43 [error] [php] Undefined variable: CDbCriteria (/var/www/code/getrti/protected/models/Mps.php:134)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/yii/framework/web/filters/CFilterChain.php(133): MpsController->runAction()
+#2 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#4 /var/www/yii/framework/web/filters/CInlineFilter.php(58): MpsController->filterAccessControl()
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#6 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(265): MpsController->runActionWithFilters()
+#8 /var/www/yii/framework/web/CWebApplication.php(282): MpsController->run()
+#9 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /var/www/code/getrti/index.php(13): CWebApplication->run()
+REQUEST_URI=/code/getrti/index.php?r=mps/mpData&query=der
+in /var/www/code/getrti/protected/models/Mps.php (134)
+in /var/www/code/getrti/protected/controllers/MpsController.php (171)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 14:51:15 [error] [exception.CException] exception 'CException' with message 'CDbCriteria and its behaviors do not have a method or closure named "condition".' in /var/www/yii/framework/base/CComponent.php:265
+Stack trace:
+#0 /var/www/code/getrti/protected/models/Mps.php(140): CComponent->__call('condition', Array)
+#1 /var/www/code/getrti/protected/models/Mps.php(140): CDbCriteria->condition('limit 10')
+#2 /var/www/code/getrti/protected/controllers/MpsController.php(171): Mps->mpsMatch('aa')
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): MpsController->actionMpData()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('mpData')
+#13 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('mps/mpData')
+#14 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /var/www/code/getrti/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/code/getrti/index.php?r=mps/mpData&query=aa
+---
+2013/08/08 14:52:03 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 10 ORDER BY name ASC' at line 1. The SQL statement executed was: SELECT * FROM `mps` `t` WHERE limit 10 ORDER BY name ASC.
+in /var/www/code/getrti/protected/models/Mps.php (142)
+in /var/www/code/getrti/protected/controllers/MpsController.php (171)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 14:52:03 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 10 ORDER BY name ASC' at line 1. The SQL statement executed was: SELECT * FROM `mps` `t` WHERE limit 10 ORDER BY name ASC' in /var/www/yii/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /var/www/yii/framework/db/CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/yii/framework/db/ar/CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 /var/www/yii/framework/db/ar/CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /var/www/code/getrti/protected/models/Mps.php(142): CActiveRecord->findAll(Object(CDbCriteria))
+#4 /var/www/code/getrti/protected/controllers/MpsController.php(171): Mps->mpsMatch('aa')
+#5 /var/www/yii/framework/web/actions/CInlineAction.php(49): MpsController->actionMpData()
+#6 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('mpData')
+#15 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('mps/mpData')
+#16 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#17 /var/www/code/getrti/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/code/getrti/index.php?r=mps/mpData&query=aa
+---
+2013/08/08 14:53:29 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 10' at line 1. The SQL statement executed was: SELECT * FROM `mps` `t` WHERE limit 10.
+in /var/www/code/getrti/protected/models/Mps.php (142)
+in /var/www/code/getrti/protected/controllers/MpsController.php (171)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 14:53:29 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 10' at line 1. The SQL statement executed was: SELECT * FROM `mps` `t` WHERE limit 10' in /var/www/yii/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /var/www/yii/framework/db/CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/yii/framework/db/ar/CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 /var/www/yii/framework/db/ar/CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /var/www/code/getrti/protected/models/Mps.php(142): CActiveRecord->findAll(Object(CDbCriteria))
+#4 /var/www/code/getrti/protected/controllers/MpsController.php(171): Mps->mpsMatch('aa')
+#5 /var/www/yii/framework/web/actions/CInlineAction.php(49): MpsController->actionMpData()
+#6 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('mpData')
+#15 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('mps/mpData')
+#16 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#17 /var/www/code/getrti/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/code/getrti/index.php?r=mps/mpData&query=aa
+---
+2013/08/08 14:53:49 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 10 ORDER BY name ASC' at line 1. The SQL statement executed was: SELECT * FROM `mps` `t` WHERE LIMIT 10 ORDER BY name ASC.
+in /var/www/code/getrti/protected/models/Mps.php (142)
+in /var/www/code/getrti/protected/controllers/MpsController.php (171)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 14:53:49 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 10 ORDER BY name ASC' at line 1. The SQL statement executed was: SELECT * FROM `mps` `t` WHERE LIMIT 10 ORDER BY name ASC' in /var/www/yii/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /var/www/yii/framework/db/CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/yii/framework/db/ar/CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 /var/www/yii/framework/db/ar/CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /var/www/code/getrti/protected/models/Mps.php(142): CActiveRecord->findAll(Object(CDbCriteria))
+#4 /var/www/code/getrti/protected/controllers/MpsController.php(171): Mps->mpsMatch('aa')
+#5 /var/www/yii/framework/web/actions/CInlineAction.php(49): MpsController->actionMpData()
+#6 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('mpData')
+#15 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('mps/mpData')
+#16 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#17 /var/www/code/getrti/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/code/getrti/index.php?r=mps/mpData&query=aa
+---
+2013/08/08 14:54:01 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 10 ORDER BY name ASC' at line 1. The SQL statement executed was: SELECT * FROM `mps` `t` WHERE LIMIT 10 ORDER BY name ASC.
+in /var/www/code/getrti/protected/models/Mps.php (142)
+in /var/www/code/getrti/protected/controllers/MpsController.php (171)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 14:54:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 10 ORDER BY name ASC' at line 1. The SQL statement executed was: SELECT * FROM `mps` `t` WHERE LIMIT 10 ORDER BY name ASC' in /var/www/yii/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /var/www/yii/framework/db/CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/yii/framework/db/ar/CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 /var/www/yii/framework/db/ar/CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /var/www/code/getrti/protected/models/Mps.php(142): CActiveRecord->findAll(Object(CDbCriteria))
+#4 /var/www/code/getrti/protected/controllers/MpsController.php(171): Mps->mpsMatch('aa')
+#5 /var/www/yii/framework/web/actions/CInlineAction.php(49): MpsController->actionMpData()
+#6 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('mpData')
+#15 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('mps/mpData')
+#16 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#17 /var/www/code/getrti/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/code/getrti/index.php?r=mps/mpData&query=aa
+---
+2013/08/08 17:10:08 [error] [php] Undefined variable: query (/var/www/code/getrti/protected/controllers/MpsController.php:171)
+Stack trace:
+#0 /var/www/yii/framework/web/filters/CFilterChain.php(133): MpsController->runAction()
+#1 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): MpsController->filterAccessControl()
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): MpsController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): MpsController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/code/getrti/index.php(13): CWebApplication->run()
+REQUEST_URI=/code/getrti/index.php?r=mps/mpData&callback=jQuery19100841102150734514_1375962006005&maxRows=12&query=dee&_=1375962006006
+in /var/www/code/getrti/protected/controllers/MpsController.php (171)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 17:13:06 [error] [php] Use of undefined constant dsd - assumed 'dsd' (/var/www/code/getrti/protected/controllers/MpsController.php:171)
+Stack trace:
+#0 /var/www/yii/framework/web/filters/CFilterChain.php(133): MpsController->runAction()
+#1 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): MpsController->filterAccessControl()
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): MpsController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): MpsController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/code/getrti/index.php(13): CWebApplication->run()
+REQUEST_URI=/code/getrti/index.php?r=mps/mpData&callback=jQuery19109978411751799285_1375962169622&maxRows=12&query=dedded&_=1375962169625
+in /var/www/code/getrti/protected/controllers/MpsController.php (171)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 17:18:08 [error] [php] Undefined variable: query (/var/www/code/getrti/protected/controllers/MpsController.php:171)
+Stack trace:
+#0 /var/www/yii/framework/web/filters/CFilterChain.php(133): MpsController->runAction()
+#1 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): MpsController->filterAccessControl()
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): MpsController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): MpsController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/code/getrti/index.php(13): CWebApplication->run()
+REQUEST_URI=/code/getrti/index.php?r=mps/mpData&callback=jQuery19109978411751799285_1375962169622&maxRows=12&query=deddedssbs&_=1375962169629
+in /var/www/code/getrti/protected/controllers/MpsController.php (171)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 17:18:32 [warning] [deddedssbsd] info
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 17:21:25 [warning] [deddedssbsdddd] info
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 17:22:24 [warning] [deddedssbsdddddsddd] info
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 17:22:45 [warning] [deddedssbsdddddsdddd] deddedssbsdddddsdddd
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 18:16:08 [warning] [dsdsdsdddsdsdddddsdsd] info
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 18:16:51 [warning] [aa] Warning
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 18:16:53 [warning] [aar] Warning
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 19:19:41 [warning] [sd] Warning
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 19:34:44 [warning] [sdd] Warning
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 19:36:58 [warning] [te] Warning
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 19:37:46 [warning] [te] Warning
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 19:38:08 [warning] [te] Warning
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 19:39:47 [warning] [te] Warning
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 19:42:28 [warning] [ds] Warning
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 19:42:28 [warning] [dsd] Warning
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 19:42:38 [warning] [dsddsd] Warning
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 19:58:04 [warning] [ds] Warning
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 19:58:06 [warning] [dsdss] Warning
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 19:58:06 [warning] [dsdss ] Warning
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 19:58:07 [warning] [dsdss ds] Warning
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 20:10:00 [warning] [ds] Warning
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 20:10:00 [warning] [dsd] Warning
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 20:10:02 [warning] [dsde] Warning
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 20:23:51 [warning] [ds] Warning
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 20:23:52 [warning] [dsd] Warning
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 20:23:55 [warning] [dsddsds] Warning
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 20:23:57 [warning] [dsddsdsdsds] Warning
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 20:24:46 [warning] [dsds] Warning
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 20:53:50 [warning] [ds] Warning
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 20:54:23 [warning] [ds] Warning
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 20:54:37 [warning] [aa] Warning
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 20:55:07 [warning] [ds] Warning
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 20:55:13 [warning] [aa] Warning
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 20:59:43 [warning] [dsds ] Warning
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 21:00:12 [warning] [sds ] Warning
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 21:00:33 [warning] [dsd] Warning
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 21:00:41 [warning] [dssds] Warning
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 21:00:43 [warning] [aa] Warning
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 21:01:15 [warning] [dsd] Warning
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 21:01:19 [warning] [aa] Warning
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 21:02:09 [warning] [dsds] Warning
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 21:02:11 [warning] [aa] Warning
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 21:02:35 [warning] [aa] Warning
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 21:03:00 [warning] [ss] Warning
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 21:03:05 [warning] [aa] Warning
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 21:03:08 [warning] [ra] Warning
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/08 21:03:11 [warning] [raj] Warning
+in /var/www/code/getrti/protected/controllers/MpsController.php (172)
+in /var/www/code/getrti/index.php (13)
+2013/08/09 00:26:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('login')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/code/getrti/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/code/getrti/index.php?r=login
+---
+2013/08/09 00:27:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "mps".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('mps')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('mps')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/mps')
+#3 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/code/getrti/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/code/getrti/index.php?r=site/mps
+---
+2013/08/09 16:55:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "findmp".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('findmp')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('findmp')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/findmp')
+#3 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/code/getrti/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/code/getrti/index.php?r=site/findmp
+HTTP_REFERER=http://localhost/code/getrti/
+---
+2013/08/09 16:57:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "findmp".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('findmp')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('findmp')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('mps/findmp')
+#3 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/code/getrti/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/code/getrti/index.php?r=mps/findmp
+HTTP_REFERER=http://localhost/code/getrti/
+---
+2013/08/09 17:00:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "findmp".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('findmp')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('findmp')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('mps/findmp')
+#3 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/code/getrti/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/code/getrti/index.php?r=mps/findmp
+HTTP_REFERER=http://localhost/code/getrti/
+---
+2013/08/09 17:01:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "findmp".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('findmp')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('findmp')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('mps/findmp')
+#3 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/code/getrti/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/code/getrti/index.php?r=mps/findmp
+HTTP_REFERER=http://localhost/code/getrti/
+---
+2013/08/09 17:01:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "findmp".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('findmp')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('findmp')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('mps/findmp')
+#3 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/code/getrti/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/code/getrti/index.php?r=mps/findmp
+HTTP_REFERER=http://localhost/code/getrti/
+---
