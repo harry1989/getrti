@@ -47,26 +47,13 @@
 	</div>
 		<!-- End of Nav Bar -->
 
-	<div class="row">
-	  <div class="small-12 large-12 ">
-	     <h1><small>Together for an Open Government</small></h1>
-	     </div>
 
-	</div>
       
 	  
 
 
-<div class="row">
-      	  <hr />
-	<div class="large-12 " role="content">
-		<?php echo $content; ?>
-	</div> <!-- End Main Content -->
-  
-  
- 
 
-  </div>
+		<?php echo $content; ?>
 
   <!-- End Main Content and Sidebar -->
 
@@ -77,11 +64,11 @@
 		<div class="large-12 ">
 		  <hr>
 		  <div class="row">
-			<div class="large-6 ">
+			<div class="large-6 columns">
 			  <p style="color:#8a8a8a">version 0.1</p>          
 			</div>
 			
-			<div class="large-6 ">
+			<div class="large-6 columns">
 				<p style="float:right;color:#8a8a8a">Creative Commons</p>
 			</div>
 			
