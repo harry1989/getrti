@@ -2,29 +2,25 @@
 
 				<div class="row"> <!-- Search Bar-->
 					<div class="large-12 columns panel" >					  
-						<div class="row collapse center" style="padding-left: 14%;margin-bottom: -2%;">
+						<div class="row collapse center" >
 
-							<div class="small-2 columns">
+							<div class="small-4 columns">
 							  <p style="line-height: 2.3;">
-									Constituency Name
+							     Search for your MP:
 							  </p>
 							</div>
 
-							<div class="small-6 columns">
-							  <input type="text" placeholder="Ex: Hyderabad">
+							<div class="small-6 columns ui-front">
+							  <input type="text" placeholder="Ex: Hyderabad" id="searchbox">
 							</div>
 
 							<div class="small-2 columns" style="float:left">
 							  <a href="#" class="button success prefix">Search</a>
 							</div>
 						
-					  </div>
+					  	</div>
 					</div>
 				</div>
-<div class="ui-front">
-<label for="searchbox">Search for your MP</label>
-<input id="searchbox">
-</div>
 
 
 <script>
@@ -32,7 +28,7 @@ $( "#searchbox" ).autocomplete({
    	source: function( request, response ) 
 		{
 			$.ajax({
-				url: "http://localhost/code/getrti/index.php?r=mps/mpData",
+				url: "/test/getrti/index.php?r=mps/mpData",
 				dataType: "json",
 				data: {
 				      maxRows: 12,
@@ -55,8 +51,10 @@ $( "#searchbox" ).autocomplete({
 		},
 	minLength: 2,
 	select: function (event,ui) {
-			//TODO: doing nothing ... need to figure this out
-			console.log(ui.item);
+      console.log(ui.item);
+      var url = "<?php echo Yii::app()->createAbsoluteUrl('campaigns/view',array('id'=>1)); ?>";
+      url=url+'&mp_id='+ui.item.id;
+      window.location.replace(url);
 		}
 });
 

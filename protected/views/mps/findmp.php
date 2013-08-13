@@ -28,7 +28,7 @@ $( "#searchbox" ).autocomplete({
    	source: function( request, response ) 
 		{
 			$.ajax({
-				url: "http://localhost/code/getrti/index.php?r=mps/mpData",
+				url: "/test/getrti/index.php?r=mps/mpData",
 				dataType: "json",
 				data: {
 				      maxRows: 12,
@@ -51,8 +51,10 @@ $( "#searchbox" ).autocomplete({
 		},
 	minLength: 2,
 	select: function (event,ui) {
-			//TODO: doing nothing ... need to figure this out
-			console.log(ui.item);
+      console.log(ui.item);
+      var url = "<?php echo Yii::app()->createAbsoluteUrl('campaigns/view',array('id'=>2)); ?>";
+      url=url+'&mp_id='+ui.item.id;
+      window.location.replace(url);
 		}
 });
 

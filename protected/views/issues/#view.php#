@@ -1,0 +1,17 @@
+<?php
+/* @var $this IssuesController */
+/* @var $model Issues */
+
+
+);
+?>
+
+<h1>View Issues #<?php echo $model->id; ?></h1>
+
+<?php $this->widget('zii.widgets.CDetailView', array(
+	'data'=>$model,
+	'attributes'=>array(
+		'description',
+		'id',
+	),
+)); ?>

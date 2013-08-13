@@ -4,10 +4,9 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 
 <head>
-	<meta charset="utf-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>getRTI</title>
-
   
   <link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/foundation.css">
   <link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/jquery-ui-1.10.3.custom.css">  
@@ -16,6 +15,7 @@
   <script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/jquery-ui-1.10.3.custom.min.js"></script>
   <script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/vendor/custom.modernizr.js"></script>
 </head>
+
 <body>
 
 		<!-- Nav Bar -->
@@ -24,12 +24,13 @@
 		
 			<div class="row">
 				
-				<div class="large-2 columns">
-				     <h1>
-					<a href="http://localhost/index.php" class="logo">
-					   getRTI
-					</a>
-					</h1>	
+				<div class="header_logo large-2 columns">
+					<h1>
+							<a href="http://localhost/index.php" class="logo">
+								<img src="<?php echo Yii::app()->theme->baseUrl; ?>/img/getrti.png">
+							</a>
+							<br>
+					</h1>
 				</div>
 
 				<div class="nav-bar large-10 columns" >
@@ -47,13 +48,8 @@
 	</div>
 		<!-- End of Nav Bar -->
 
-
-      
-	  
-
-
-
-		<?php echo $content; ?>
+  <!-- Main Content and Sidebar -->	
+	<?php echo $content; ?>
 
   <!-- End Main Content and Sidebar -->
 

@@ -1,4 +1,4 @@
-ul.newnav
+	ul.newnav
 	{
 		margin-left: 6%;
 		list-style: none;
@@ -10,7 +10,15 @@ ul.newnav
 	li.newnav{
 		float:left;
 		margin-right:4%;
+		margin-top:3%;
 	}
+	
+	
+	.large-8 columns
+	{
+	padding-left:-0.9375em;
+	}
+	
 	input.custom.checkbox {
 	
 		display: inline-block;
@@ -41,6 +49,19 @@ ul.newnav
 	ul.tasklist > li.disabled {
 		
 	}
+	
+	
+	li.mail
+	{
+		float: right;
+		background: #6aa84f;
+		color: white;
+		padding: 1%;
+		padding-right: 6%;
+		padding-left: 6%;
+		margin-right: -4%;
+		margin-top:3%;
+	}
 
 	aside.sidenavcol
 	{
@@ -55,16 +76,91 @@ ul.newnav
 	
 	}
 	
-	p.test
-	{
-		
+	p
+	{	
+		text-align:justify;
 	}
 	
 	a.logo
 	{
-	color:black;
+		color:black;
 	}
 	
-	.left {
-	    float:left;
-	    }
+	.left 
+	{
+		float:left;
+	}
+	
+	aside.checklist
+	{
+		background-color: #f3f3f3;
+		margin-top: -9.9%;
+	}
+	
+	aside.checklist h4
+	{	
+		padding-top:8%;
+	}
+	
+	#checklist
+	{
+		background: none;
+		margin-bottom: 1.25em;
+	}
+	
+	ul.newnav
+	{
+		margin-left: 6%;
+		list-style: none;
+		font-size: 15pt;
+		line-height: 1.6;
+		font-family: inherit;		
+	}
+	
+	li.newnav a
+	{
+		color:black;
+	}
+	
+	.header_logo
+	{
+		padding-left: 2%;
+	}
+	
+		.panel_likes
+	{
+		 background-color: #f1c232;
+			color: white;
+			text-align: center;
+			width: 90%;
+			margin-top: -20%;
+	}
+	
+	.panel_for
+	{
+		height: 212px;
+		  background-color: #8bab42;
+		  margin-bottom: 1.25em;
+		  padding: 1.25em;
+		  width: 48%;
+		  
+	}
+	
+	.panel_against
+	{
+		  background-color: #ea0505;
+		  margin-bottom: 1.25em;
+		  padding: 1.25em;
+		  width: 48%;
+		height: 212px;  
+	}
+	
+	
+	.panel_custom
+	{
+		  border-style: solid;
+		  border-width: 1px;
+		  border-color: #d9d9d9;
+		  margin-bottom: 1.25em;
+		  padding: 1.25em;
+	}
