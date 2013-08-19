@@ -1,5 +1,3 @@
-
-
 				<div class="row"> <!-- Search Bar-->
 					<div class="large-12 columns panel" >					  
 						<div class="row collapse center" >
@@ -28,7 +26,7 @@ $( "#searchbox" ).autocomplete({
    	source: function( request, response ) 
 		{
 			$.ajax({
-				url: "/test/getrti/index.php?r=mps/mpData",
+				url: "<?php echo $url ?>",
 				dataType: "json",
 				data: {
 				      maxRows: 12,
@@ -52,7 +50,7 @@ $( "#searchbox" ).autocomplete({
 	minLength: 2,
 	select: function (event,ui) {
       console.log(ui.item);
-      var url = "<?php echo Yii::app()->createAbsoluteUrl('campaigns/view',array('id'=>2)); ?>";
+      var url = "<?php echo Yii::app()->createAbsoluteUrl('campaigns/view',array('id'=>3)); ?>";
       url=url+'&mp_id='+ui.item.id;
       window.location.replace(url);
 		}

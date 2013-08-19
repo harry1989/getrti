@@ -34,15 +34,27 @@ class CampaignsController extends Controller
 	}
 	*/
 
-	public function actionView ($id,$mp_id){
-	  $mp=Mps::model()->findByPk($mp_id);
-	  $mpPosition = MpPositionOnIssues::model()->findByAttributes(array('mp_id'=>$mp_id,'issue_id'=>$id));
-	  if($mpPosition===null)
-	    $pos = "The MP has not decided yet";
-	  else
-	    $pos = $mpPosition->statement;
-	  $issue=Issues::model()->findByPk($id);
-	  //TODO: Need to get all the positions on the issue
-	  $this->render('view',array('issue'=>$issue,'mp'=>$mp,'pos'=>$pos));
+
+
+	public function actionView ($id,$mp_id)
+	{
+	       $mp=Mps::model()->findByPk($mp_id);
+	       $mpPosition = MpPositionOnIssues::model()->findByAttributes(array('mp_id'=>$mp_id,'issue_id'=>$id));
+	       if($mpPosition===null)
+			$pos = "The MP has not decided yet";
+	  	else
+			$pos = $mpPosition->statement;
+	  	$issue=Issues::model()->findByPk($id);
+	  	//TODO: Need to get all the positions on the issue
+		$position = new Positions;
+		if(isset($_POST['Positions']))
+		{
+
+			$position->attributes=$_POST['Positions'];
+			//TODO: Need to do exception handling here. What if it doesn't save?
+			$position->save();
+
+		}
+	  	$this->render('view',array('issue'=>$issue,'mp'=>$mp,'pos'=>$pos , 'position'=>$position));
 	}
 }

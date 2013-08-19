@@ -74,9 +74,8 @@
 						</div>
 					</div>
 				</div>
-
-
-     <?php echo $this->renderPartial('_form', array('model'=>$Position)); ?>
+				
+				<?php echo $this->renderPartial('_form', array('position'=>$position)); ?>				
 
 	
 			<div class="row">

@@ -170,7 +170,10 @@ class MpsController extends Controller
 			header('Content-type: application/json');
 			$query = $_GET['query'];
 			$maxRows = $_GET['maxRows'];
-			echo CJSON::encode(Mps::model()->mpsMatch($query,$maxRows));			
+			$model = Mps::model()->mpsMatch($query,$maxRows);			
+			if ($model === null)
+	   			throw new CHttpException(404,'The requested page does not exist.');
+			echo CJSON::encode($model);
 			Yii::app()->end();
 		}
 	}
@@ -179,7 +182,8 @@ class MpsController extends Controller
 	**/
 	public function actionfindMp()
 	{
-		$this->render('findmp');
+		$url = Yii::app()->createAbsoluteUrl('mps/mpData');
+		$this->render('findmp',array('url'=>$url));
 	}
 
 
