@@ -11,10 +11,10 @@ class SiteController extends Controller
 	 return array(
       	 	'oauth' => array(
         	// the list of additional properties of this action is below
-		'class'=>'application.components.hoauth.HOAuthAction',
+		'class'=>'ext.hoauth.HOAuthAction',
         	// Yii alias for your user's model, or simply class name, when it already on yii's import path
         	// default value of this property is: User
-        	'model' => 'User', 
+        	'model' => 'Users', 
         	// map model attributes to attributes of user's social profile
         	// model attribute => profile attribute
         	// the list of avaible attributes is below
@@ -33,7 +33,7 @@ class SiteController extends Controller
       // (you must delete this action, when you'll be ready with configuration, or 
       // specify rules for admin role. User shouldn't have access to this action!)
       'oauthadmin' => array(
-       		      'class'=>'application.components.hoauth.HOAuthAdminAction',
+       		      'class'=>'ext.hoauth.HOAuthAdminAction',
       		      ),
         );
 
@@ -115,6 +115,14 @@ class SiteController extends Controller
 		// display the login form
 		$this->render('login',array('model'=>$model));
 	}
+
+	/**
+	**/
+	public function actionHybridLogin()
+	{
+		$this->render('hybridlogin');		
+	}
+
 
 	/**
 	 * Logs out the current user and redirect to homepage.
