@@ -38,11 +38,11 @@ class Positions extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('user_id, position, issue_id', 'numerical', 'integerOnly'=>true),
+			array('user_id,  issue_id', 'numerical', 'integerOnly'=>true),
 			array('statement', 'length', 'max'=>1000),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('statement, user_id, position, id, issue_id', 'safe', 'on'=>'search'),
+			array('statement, user_id,  id, issue_id', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -65,7 +65,6 @@ class Positions extends CActiveRecord
 		return array(
 			'statement' => 'Statement',
 			'user_id' => 'User',
-			'position' => 'Position',
 			'id' => 'ID',
 			'issue_id' => 'Issue',
 		);
@@ -84,7 +83,6 @@ class Positions extends CActiveRecord
 
 		$criteria->compare('statement',$this->statement,true);
 		$criteria->compare('user_id',$this->user_id);
-		$criteria->compare('position',$this->position);
 		$criteria->compare('id',$this->id);
 		$criteria->compare('issue_id',$this->issue_id);
 

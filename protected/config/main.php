@@ -9,7 +9,7 @@ return array(
 	//'theme'=>'classic',
 	'theme'=>'foundation',
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'My Web Application',
+	'name'=>'Get RTI Web Portal',
 
 	// preloading 'log' component
 	'preload'=>array('log'),

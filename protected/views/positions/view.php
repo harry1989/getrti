@@ -23,7 +23,6 @@ $this->menu=array(
 	'attributes'=>array(
 		'statement',
 		'user_id',
-		'position',
 		'id',
 		'issue_id',
 	),

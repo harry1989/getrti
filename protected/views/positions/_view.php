@@ -17,9 +17,7 @@
 	<?php echo CHtml::encode($data->user_id); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('position')); ?>:</b>
-	<?php echo CHtml::encode($data->position); ?>
-	<br />
+
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('issue_id')); ?>:</b>
 	<?php echo CHtml::encode($data->issue_id); ?>

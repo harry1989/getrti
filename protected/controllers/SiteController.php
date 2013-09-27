@@ -7,18 +7,36 @@ class SiteController extends Controller
 	 */
 	public function actions()
 	{
-		return array(
-			// captcha action renders the CAPTCHA image displayed on the contact page
-			'captcha'=>array(
-				'class'=>'CCaptchaAction',
-				'backColor'=>0xFFFFFF,
-			),
-			// page action renders "static" pages stored under 'protected/views/site/pages'
-			// They can be accessed via: index.php?r=site/page&view=FileName
-			'page'=>array(
-				'class'=>'CViewAction',
-			),
-		);
+
+	 return array(
+      	 	'oauth' => array(
+        	// the list of additional properties of this action is below
+		'class'=>'application.components.hoauth.HOAuthAction',
+        	// Yii alias for your user's model, or simply class name, when it already on yii's import path
+        	// default value of this property is: User
+        	'model' => 'User', 
+        	// map model attributes to attributes of user's social profile
+        	// model attribute => profile attribute
+        	// the list of avaible attributes is below
+        	'attributes' => array(
+         		      'email' => 'email',
+          		      'fname' => 'firstName',
+         		      'lname' => 'lastName',
+          		      'gender' => 'genderShort',
+         		      'birthday' => 'birthDate',
+          		      // you can also specify additional values, 
+          		      // that will be applied to your model (eg. account activation status)
+          		      'acc_status' => 1,
+        		      ),
+      		),
+      // this is an admin action that will help you to configure HybridAuth 
+      // (you must delete this action, when you'll be ready with configuration, or 
+      // specify rules for admin role. User shouldn't have access to this action!)
+      'oauthadmin' => array(
+       		      'class'=>'application.components.hoauth.HOAuthAdminAction',
+      		      ),
+        );
+
 	}
 
 	/**
