@@ -38,7 +38,7 @@
 						<li class="newnav active"><a href="<?php echo Yii::app()->createUrl('site/index'); ?>">Home</a></li>
 						<li class="newnav"><a href="<?php echo Yii::app()->createUrl('mps/findmp'); ?>">Find your MP</a></li>
 						<li class="newnav"><a href="<?php echo Yii::app()->createUrl('campaigns/view',array('id'=>1)); ?>">SaveRTI</a></li>
-						<li class="newnav"><a href="<?php echo Yii::app()->createUrl('site/page',array('view'=>'about')); ?>">About</a></li>
+						<li class="newnav"><a href="<?php echo Yii::app()->createUrl('site/about',array('view'=>'page')); ?>">About</a></li>
 						<li class="mail"><span>Mail us at getrti@gmail.com</span></li>
 					</ul>		  
 				</div>
