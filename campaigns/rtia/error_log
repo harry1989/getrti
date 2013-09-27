@@ -1,9 +1,0 @@
-[03-Aug-2013 13:44:40 America/Chicago] PHP Warning:  include(qcubed/qcubed.inc.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/handsmed/public_html/getrti/campaigns/rtia/index.php on line 2
-[03-Aug-2013 13:44:40 America/Chicago] PHP Warning:  include(qcubed/qcubed.inc.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/handsmed/public_html/getrti/campaigns/rtia/index.php on line 2
-[03-Aug-2013 13:44:40 America/Chicago] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'qcubed/qcubed.inc.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/handsmed/public_html/getrti/campaigns/rtia/index.php on line 2
-[03-Aug-2013 13:44:40 America/Chicago] PHP Fatal error:  Class 'QForm' not found in /home/handsmed/public_html/getrti/campaigns/rtia/index.php on line 4
-[04-Aug-2013 03:21:58 America/Chicago] PHP Fatal error:  Class 'Yii' not found in /home/handsmed/public_html/getrti/campaigns/rtia/includes/header.inc.php on line 14
-[04-Aug-2013 03:22:03 America/Chicago] PHP Fatal error:  Class 'Yii' not found in /home/handsmed/public_html/getrti/campaigns/rtia/includes/header.inc.php on line 14
-[04-Aug-2013 03:22:56 America/Chicago] PHP Fatal error:  Class 'Yii' not found in /home/handsmed/public_html/getrti/campaigns/rtia/includes/header.inc.php on line 66
-[04-Aug-2013 11:45:53 America/Chicago] PHP Fatal error:  Call to undefined method Index::widget() in /home/handsmed/public_html/getrti/campaigns/rtia/includes/h1.inc.php on line 31
-[04-Aug-2013 11:48:38 America/Chicago] PHP Fatal error:  Call to undefined method Index::widget() in /home/handsmed/public_html/getrti/campaigns/rtia/includes/h1.inc.php on line 31
