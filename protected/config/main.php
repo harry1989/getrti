@@ -9,7 +9,7 @@ return array(
 	//'theme'=>'classic',
 	'theme'=>'foundation',
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'Get RTI Web Portal',
+	'name'=>'My Web Application',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -22,12 +22,14 @@ return array(
 
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
+		/*
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
-			'password'=>'getrti#@!',
+			'password'=>'Enter Your Password Here',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
-			'ipFilters'=>false,
+			'ipFilters'=>array('127.0.0.1','::1'),
 		),
+		*/
 	),
 
 	// application components
@@ -51,13 +53,15 @@ return array(
 			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
 		),
 		// uncomment the following to use a MySQL database
+		/*
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=getrtilatest',
+			'connectionString' => 'mysql:host=localhost;dbname=testdrive',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => 'harish123',
+			'password' => '',
 			'charset' => 'utf8',
 		),
+		*/
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
 			'errorAction'=>'site/error',
