@@ -353,6 +353,7 @@ class HOAuthAction extends CAction
           $profile->first_name = $userProfile->firstName;
           $profile->last_name = $userProfile->lastName;
         }
+	Yii::log("Logged in with existing link with '$' provider", CLogger::LEVEL_ERROR, 'hoauth.'.__CLASS__);
 
 				if(!$profile->save())
 					throw new Exception("Error, while saving " . get_class($profile) . "	model:\n\n" . var_export($user->errors, true));

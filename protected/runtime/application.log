@@ -3911,3 +3911,25 @@ Stack trace:
 #24 {main}
 REQUEST_URI=/code/getrtilatest/index.php?r=campaigns/view&id=1
 ---
+2013/10/06 16:51:48 [error] [php] Undefined variable: baseUrl (/var/www/code/getrtilatest/protected/views/mps/mpMap.php:2)
+Stack trace:
+#0 /var/www/code/getrtilatest/yii-1.1.13.e9e4a0/framework/web/CController.php(869): MpsController->renderFile()
+#1 /var/www/code/getrtilatest/yii-1.1.13.e9e4a0/framework/web/CController.php(782): MpsController->renderPartial()
+#2 /var/www/code/getrtilatest/protected/controllers/MpsController.php(204): MpsController->render()
+#3 /var/www/code/getrtilatest/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): MpsController->actionmpMap()
+#4 /var/www/code/getrtilatest/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/code/getrtilatest/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(133): MpsController->runAction()
+#6 /var/www/code/getrtilatest/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/code/getrtilatest/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /var/www/code/getrtilatest/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): MpsController->filterAccessControl()
+#9 /var/www/code/getrtilatest/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /var/www/code/getrtilatest/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/code/getrtilatest/yii-1.1.13.e9e4a0/framework/web/CController.php(265): MpsController->runActionWithFilters()
+#12 /var/www/code/getrtilatest/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): MpsController->run()
+#13 /var/www/code/getrtilatest/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /var/www/code/getrtilatest/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /var/www/code/getrtilatest/index.php(13): CWebApplication->run()
+REQUEST_URI=/code/getrtilatest/index.php?r=mps/mpMap
+in /var/www/code/getrtilatest/protected/views/mps/mpMap.php (2)
+in /var/www/code/getrtilatest/protected/controllers/MpsController.php (204)
+in /var/www/code/getrtilatest/index.php (13)
